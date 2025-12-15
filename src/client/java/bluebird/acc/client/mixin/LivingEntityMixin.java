@@ -1,9 +1,7 @@
 package bluebird.acc.client.mixin;
 
-import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,7 +16,7 @@ public abstract class LivingEntityMixin {
     )
     private void onSwingHand(Hand hand, boolean fromServer, CallbackInfo ci) {
         if ((Object) this instanceof ClientPlayerEntity player) {
-            player.resetTicksSinceLastAttack();
+            player.resetLastAttackedTicks();
         }
     }
 }
