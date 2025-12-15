@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "acc",
+  "version": "${version}",
+  "name": "Accurate Crosshair Cooldown",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/acc/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "bluebird.acc.client.AccClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "acc.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
