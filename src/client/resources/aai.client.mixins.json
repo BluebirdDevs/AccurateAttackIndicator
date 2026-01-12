@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "bluebird.acc.client.mixin",
+  "package": "bluebird.aai.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "LivingEntityMixin"

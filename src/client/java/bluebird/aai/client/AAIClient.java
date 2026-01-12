@@ -1,9 +1,9 @@
-package bluebird.acc.client;
+package bluebird.aai.client;
 
 import net.minecraft.client.MinecraftClient;
 import net.fabricmc.api.ClientModInitializer;
 
-public class AccClient implements ClientModInitializer {
+public class AAIClient implements ClientModInitializer {
 
     private static final MinecraftClient client = MinecraftClient.getInstance();
 

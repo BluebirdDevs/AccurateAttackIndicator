@@ -1,28 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "acc",
+  "id": "aai",
   "version": "${version}",
-  "name": "Accurate Crosshair Cooldown",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "name": "Accurate Attack Indicator",
+  "description": "Shows the visual cooldown when it gets silently reset. Visualizes MC-118740",
+  "authors": ["BluebirdDevs"],
+  "contact": {
+    "sources": "https://github.com/BluebirdDevs/AccurateAttackIndicator",
+    "homepage": "https://modrinth.com/project/AoSJ2hG0",
+    "issues": "https://github.com/BluebirdDevs/AccurateAttackIndicator/issues"
+  },
   "license": "All-Rights-Reserved",
-  "icon": "assets/acc/icon.png",
+  "icon": "assets/aai/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "bluebird.acc.client.AccClient"
+      "bluebird.aai.client.AAIClient"
     ]
   },
   "mixins": [
     {
-      "config": "acc.client.mixins.json",
+      "config": "aai.client.mixins.json",
       "environment": "client"
     }
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   }
 }
