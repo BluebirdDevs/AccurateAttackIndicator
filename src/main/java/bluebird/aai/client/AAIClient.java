@@ -1,11 +1,11 @@
 package bluebird.aai.client;
 
-import net.minecraft.client.MinecraftClient;
 import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.client.Minecraft;
 
 public class AAIClient implements ClientModInitializer {
 
-    private static final MinecraftClient client = MinecraftClient.getInstance();
+    private static final Minecraft client = Minecraft.getInstance();
 
     @Override
     public void onInitializeClient() {
